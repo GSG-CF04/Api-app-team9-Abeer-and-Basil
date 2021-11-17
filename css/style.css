@@ -47,3 +47,39 @@ justify-content: space-evenly;
   box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.15);
   transform: translate3D(0, -2px, 0);
 }
+.details{
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    position: relative;
+}
+#bookImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 1px #fdbb2d;
+}
+.nameHover{
+  border-radius: 12px;
+  overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: #22c1c3
+}
+.card:hover .nameHover{
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.15);
+  opacity: 1;
+ transition: all 2s ease;
+}
+@media screen and (max-width: 676px) {
+.card{
+    width:375px;
+}
+ 
+}
