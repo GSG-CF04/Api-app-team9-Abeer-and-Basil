@@ -57,10 +57,10 @@ fetch("https://anapioficeandfire.com/api/books")
 
         let divs=document.createElement('div')
         divs.setAttribute('class','nameHover')
-        let  numberOfPages1=document.createElement('p')
-        numberOfPages1.textContent=`Number Of Pages: ${book.numberOfPages}`
-        divNumber.appendChild(numberOfPages1)
-        card.appendChild(divNumber)
+        let bookImg=document.createElement('img')
+        bookImg.setAttribute('id','bookImage')
+        bookImg.src='book.png'
+        divs.appendChild(bookImg)
         
         let names=document.createElement('h2')
         names.textContent=book.name
