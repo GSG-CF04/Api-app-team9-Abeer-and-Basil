@@ -54,10 +54,9 @@ fetch("https://anapioficeandfire.com/api/books")
         numberOfPages.textContent=`Number Of Pages: ${book.numberOfPages}`
         divNumber.appendChild(numberOfPages)
         card.appendChild(divNumber)
-
         let divs=document.createElement('div')
         divs.setAttribute('class','nameHover')
-        let bookImg=document.createElement('p')
+        let bookImg=document.createElement('img')
         bookImg.setAttribute('id','bookImage')
         bookImg.src='book.png'
         divs.appendChild(bookImg)
@@ -66,7 +65,6 @@ fetch("https://anapioficeandfire.com/api/books")
         names.textContent=book.name
         divs.appendChild(names)
         card.appendChild(divs)
-       
     })
 })
 .catch(error=> console.log(error))
